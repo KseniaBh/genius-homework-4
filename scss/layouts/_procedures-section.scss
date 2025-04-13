@@ -1,0 +1,65 @@
+.procedures-section {
+    padding-bottom: 96px;
+
+
+&__title {
+    text-align: center;
+}
+
+&__our-work-list {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+&__our-work-item {
+    width: 100%;
+    height: 100%;
+}
+
+&__our-work-card {
+    border-radius: 120px 4px;
+
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s;
+    height: 456px;
+    max-width: 344px;
+}
+
+&__our-work-card:hover {
+    transform: scale(1.05);
+}
+
+&__our-work-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    text-align: center;
+    color: var(--white-color);
+}
+}
+.proc-card-1 {
+    background: linear-gradient(180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.73) 84.61%,
+            #011c44 101.39%),
+        url('../images/face-mask.jpg');
+}
+
+.proc-card-2 {
+    background: linear-gradient(180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.73) 84.61%,
+            #011c44 101.39%),
+        url('../images/face-injection.jpg');
+}
+
+.proc-card-3 {
+    background: linear-gradient(180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.73) 84.61%,
+            #011c44 101.39%),
+        url('../images/face-clean.jpg');
+}

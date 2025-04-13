@@ -10,19 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container">
-        <div class="container-header">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="/">
               <img src="./images/logo.svg" alt="brand logo" />
             </a>
 
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#descriprtion-section">Про нас</a>
               </li>
@@ -68,16 +68,16 @@
     <main>
       <!-- hero section -->
       <section class="hero-section">
-        <div class="container container-hero">
+        <div class="container hero-section__container">
           <p>Косметологічна клініка</p>
-          <h1 class="hero-title">
+          <h1 class="hero-section__title">
             beauty <br />
             zone
           </h1>
           <button class="button-primary modal-btn-open" type="button">
             Замовити дзвінок
           </button>
-          <p class="hero-text">
+          <p class="hero-section__text">
             Запишись та отримай безкоштовну <br />
             консультацію нашого косметолога
           </p>
@@ -85,16 +85,16 @@
       </section>
       <!-- description section -->
       <section class="description-section" id="description-section">
-        <div class="container description-container">
-          <div class="descriprtion-box">
-            <h2 class="section-title descriprtion-title">
+        <div class="container description-section__container">
+          <div class="description-section__box">
+            <h2 class="section-title description-section__title">
               Перевтілюйтесь з <span class="accent">beauty zone!</span>
             </h2>
-            <p class="description-text">
+            <p class="description-section__text">
               Наша косметологічна клініка пропонує вам професійні послуги з
               догляду за шкірою обличчя та тіла.
             </p>
-            <p class="description-text">
+            <p class="description-section__text">
               B <span class="accent-dark">beauty zone</span> ми гарантуємо
               найвищі стандарти якості та приємний сервіс. Наші косметологічні
               процедури та препарати допоможуть вам підтримувати свою красу та
@@ -127,11 +127,11 @@
       <!-- advantages section -->
       <section class="advantages-section" id="advantages-section">
         <div class="container">
-          <h2 class="section-title advantages-title">
+          <h2 class="section-title advantages-section__title">
             Чому люди <span class="accent">обирають нас</span>
           </h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">
               <article>
                 <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-science"></use>
@@ -142,7 +142,7 @@
                 </p>
               </article>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-section__item">
               <article>
                 <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-medicine"></use>
@@ -153,7 +153,7 @@
                 </p>
               </article>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-section__item">
               <article>
                 <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-crown"></use>
@@ -170,7 +170,7 @@
       <!-- procedures section -->
       <section class="procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title procedures-title">
+          <h2 class="section-title procedures-section__title">
             Наші <span class="accent">процедури</span>
           </h2>
           <div class="carousel-container">
@@ -179,19 +179,19 @@
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <ul class="our-work-list">
-              <li class="our-work-item">
-                <article class="our-work-card proc-card-1">
+            <ul class="procedures-section__our-work-list">
+              <li class="procedures-section__our-work-item">
+                <article class="procedures-section__our-work-card proc-card-1">
                   <h3>Маски <br />для обличчя</h3>
                 </article>
               </li>
-              <li class="our-work-item">
-                <article class="our-work-card proc-card-2">
+              <li class="procedures-section__our-work-item">
+                <article class="procedures-section__our-work-card proc-card-2">
                   <h3>Ін'єкції <br />для обличчя</h3>
                 </article>
               </li>
-              <li class="our-work-item">
-                <article class="our-work-card proc-card-3">
+              <li class="procedures-section__our-work-item">
+                <article class="procedures-section__our-work-card proc-card-3">
                   <h3>Чистка <br />обличчя</h3>
                 </article>
               </li>
@@ -207,10 +207,10 @@
       <!-- contacts-section -->
       <section class="contacts-section" id="contacts-section">
         <div class="container">
-          <h2 class="section-title contacts-title">
+          <h2 class="section-title contacts-section__title">
             Як нас <span class="accent">знайти</span>
           </h2>
-          <div class="contacts-container">
+          <div class="contacts-section__container">
             <iframe
               class="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.8913444418372!2d30.775021671505225!3d50.50608508840642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1740682240857!5m2!1sru!2sua"

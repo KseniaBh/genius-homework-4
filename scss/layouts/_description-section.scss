@@ -1,0 +1,50 @@
+.description-section {
+    padding-bottom: 176px;
+
+&__container {
+    display: flex;
+
+    gap: 28px;
+}
+&__text {
+    font-size: 22px;
+}
+
+
+&__box {
+    width: 550px;
+}
+
+&__title {
+    margin-bottom: 40px;
+}
+}
+
+.descr-img-container {
+    flex-basis: 50%;
+    position: relative;
+}
+
+
+
+.descriprtion-list:last-child {
+    align-self: flex-end;
+}
+
+.face-before {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.face-after {
+    display: block;
+    margin-left: auto;
+}
+
+.face-img {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}

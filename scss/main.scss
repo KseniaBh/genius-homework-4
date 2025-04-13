@@ -1,0 +1,41 @@
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/utils';
+
+@import './components/buttons';
+
+
+@import './components/links';
+
+/* header */
+
+@import './layouts/header';
+/* hero section */
+
+@import './layouts/hero-section';
+
+
+/* description section */
+@import './layouts/description-section';
+
+@import './components/stars';
+/* advantages section */
+ 
+@import './layouts/description-section';
+/* procedures-section */
+
+@import './components/carousel';
+
+@import './layouts/procedures-section';
+
+/* contacts-section */
+@import './layouts/contacts-section';
+
+/* footer */
+@import './layouts/footer';
+
+/* Modal */
+
+@import './layouts/modal';

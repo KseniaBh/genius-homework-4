@@ -1,0 +1,32 @@
+.contacts-section {
+    padding-bottom: 96px;
+
+
+&__title {
+    text-align: center;
+}
+
+&__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+}
+.map {
+    border-radius: 32px;
+}
+
+.on-contact {
+    margin-bottom: 16px;
+}
+
+.form-container {
+    border-radius: 32px;
+    width: 100%;
+    max-width: 423px;
+    height: 100%;
+    /* max-height: 481px; */
+    background-color: var(--main-brand-color-dark);
+    background-image: url(../images/background-footer.png);
+    padding: 48px 57px;
+}

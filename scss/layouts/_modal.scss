@@ -1,0 +1,123 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    max-width: 681px;
+    max-height: 723px;
+    background-color: var(--main-brand-color-dark);
+    background-image: url(../images/background-footer.png);
+    border-radius: 48px;
+    position: relative;
+    padding: 42px 144px;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+}
+
+.modal-title {
+    color: var(--white-color);
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modal-text {
+    color: var(--white-color);
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.modal-text span {
+    color: var(--main-brand-color-light);
+}
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+.form-input {
+    padding: 18px 32px;
+    width: 100%;
+    border-radius: 32px;
+    line-height: 1;
+    border: 2px solid var(--secondary-color);
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.form-input:focus {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--white-color);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+
+.form-term {
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.form-term-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.form-container {
+    border-radius: 32px;
+    width: 100%;
+    max-width: 423px;
+    height: 100%;
+    /* max-height: 481px; */
+    background-color: var(--main-brand-color-dark);
+    background-image: url(../images/background-footer.png);
+    padding: 48px 57px;
+}
