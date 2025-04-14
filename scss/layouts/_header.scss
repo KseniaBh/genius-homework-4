@@ -1,47 +1,99 @@
 .header {
-    position: absolute;
+position: absolute;
     width: 100%;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.25);
-    padding: 32px;
+   
+        @media screen and (min-width: $bp-tablet) {
+                top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 12px 0;
+                    backdrop-filter: blur(5px);
+                    background: rgba(255, 255, 255, 0.25);}
 
  &__container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 40px;
+
+            @media screen and (min-width: $bp-tablet) {
+                    padding: 32px 0;
+                }
         }
 
 &__nav {
-   display: flex;
-   align-items: center;
-   gap: 240px;
+   display: none;
+
+@media screen and (min-width: $bp-tablet) {
+        display: flex;
+            align-items: center;
+            gap: 240px;
+    }
    
          }
-  &__menu {
+  
+  &__nav {
+      width: 1239px;
+      height: 42px;
       display: flex;
-      gap: 56px;
-      flex-grow: 1;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+  }
+
+  &__menu {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+            gap: 56px;
+            flex-grow: 1;
+            justify-content: center;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+          gap: 56px;
+      }
+  }
+
+  &__burger {
+      fill: var(--white-color);
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      border: none;
+
+      @media screen and (min-width: $bp-tablet) {
+          display: none;
+      }
   }
 }
 
 
 
 .social-media {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            justify-content: space-between;
+        }
+  
+           &__items {
+               display: flex;
+               gap: 32px;
+           }
+    
+          
 }
 
-.social-media-items {
-    display: flex;
-    gap: 32px;
-}
+ .header-icon {
+     fill: var(--secondary-color);
+     transition: fill 0.2s;
+ }
 
-.header-icon {
-    fill: var(--secondary-color);
-    transition: fill 0.2s;
-}
-
-.header-icon:hover {
-    fill: var(--main-brand-color-light);
-}
+ .header-icon:hover {
+     fill: var(--main-brand-color-light);
+ }
