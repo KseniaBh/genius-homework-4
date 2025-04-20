@@ -1,5 +1,6 @@
 .container {
     max-width: 1288px;
+    
     width: 100%;
     margin: 0 auto;
     padding: 0 24px;
@@ -10,4 +11,8 @@
     font-weight: 700;
     font-size: 64px;
     margin-bottom: 48px;
+
+    &__accent {
+       color: var(--main-brand-color-light); 
+    }
 }

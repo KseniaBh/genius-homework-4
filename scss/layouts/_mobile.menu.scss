@@ -31,6 +31,7 @@
 
     &__logo {
         margin-bottom: 32px;
+        display: inline-block;
     }
 
     &__menu {
@@ -49,6 +50,10 @@
         &:hover {
             color: var(--main-brand-color-light);
         }
+    }
+    &__social {
+        display: flex;
+        gap: 16px;
     }
 
    

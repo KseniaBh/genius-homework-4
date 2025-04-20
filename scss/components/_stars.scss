@@ -6,22 +6,42 @@
 .star1 {
     fill: var(--main-brand-color-dark);
     top: 355px;
-    left: 140px;
+    
     animation: pulsing 2s infinite;
+
+    @media screen and (min-width: $bp-tablet) {
+    
+            fill: var(--main-brand-color-dark);
+            width: 40px;
+            height: 40px;
+            left: 140px;
+            
+            animation: pulsing 2s infinite;
+        }
 }
 
 .star2 {
-    fill: var(--main-brand-color-light);
-    top: 30px;
-    right: 0;
-    animation: pulsing 2s infinite;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+            fill: var(--main-brand-color-light);
+                top: 30px;
+                right: 0;
+                animation: pulsing 2s infinite;
+        }
 }
 
 .star3 {
-    fill: var(--secondary-color);
-    top: 260px;
-    right: 40px;
-    animation: pulsing 2s infinite;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        fill: var(--secondary-color);
+            top: 260px;
+            right: 40px;
+            animation: pulsing 2s infinite;
+        }
 }
 
 @keyframes pulsing {

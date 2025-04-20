@@ -23,6 +23,8 @@
 .descr-img-container {
     flex-basis: 50%;
     position: relative;
+
+    
 }
 
 
@@ -42,9 +44,14 @@
 }
 
 .face-img {
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
+display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+            width: 340px;
+                height: 340px;
+                border-radius: 50%;
+                overflow: hidden;
+                flex-shrink: 0;
+        }
 }

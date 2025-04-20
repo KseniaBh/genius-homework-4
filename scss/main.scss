@@ -25,11 +25,13 @@
 /* advantages section */
  
 @import './layouts/description-section';
-/* procedures-section */
 
+/* procedures-section */
 @import './components/carousel';
 
 @import './layouts/procedures-section';
+@import './components/procedures-card';
+@import './components/pagination';
 
 /* contacts-section */
 @import './layouts/contacts-section';

@@ -19,7 +19,11 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="/">
-              <img src="./images/logo.svg" alt="brand logo" />
+              <img
+                class="header__logo"
+                src="./images/logo.svg"
+                alt="brand logo"
+              />
             </a>
 
             <ul class="header__menu">
@@ -36,8 +40,8 @@
                 <a class="link" href="#contacts-section">Контакти</a>
               </li>
             </ul>
-            <div class="social-media">
-              <ul class="social-media-items">
+            <div class="header__social-media">
+              <ul class="header__social-media-items">
                 <li>
                   <a href="tel:+380960000007" target="_blank">
                     <svg class="header-icon" width="24" height="24">
@@ -62,6 +66,7 @@
               </ul>
             </div>
           </nav>
+          <!-- Mobile menu -->
           <button class="header__burger menu-open" type="button">
             <svg width="20" height="14">
               <use href="./images/icons.svg#icon-burger"></use>
@@ -115,17 +120,17 @@
             </ul>
             <div class="mobile-menu__social">
               <a href="tel:+380960000007">
-                <svg class="mobile-menu__header-icon" width="27" height="30">
+                <svg class="mobile-menu__header-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-telephone"></use>
                 </svg>
               </a>
               <a href="#">
-                <svg class="mobile-menu__header-icon" width="16" height="28">
+                <svg class="mobile-menu__header-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
               <a href="#">
-                <svg class="mobile-menu__header-icon" width="25" height="25">
+                <svg class="mobile-menu__header-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -157,7 +162,8 @@
         <div class="container description-section__container">
           <div class="description-section__box">
             <h2 class="section-title description-section__title">
-              Перевтілюйтесь з <span class="accent">beauty zone!</span>
+              Перевтілюйтесь з
+              <span class="section-title__accent">beauty zone!</span>
             </h2>
             <p class="description-section__text">
               Наша косметологічна клініка пропонує вам професійні послуги з
@@ -197,12 +203,12 @@
       <section class="advantages-section" id="advantages-section">
         <div class="container">
           <h2 class="section-title advantages-section__title">
-            Чому люди <span class="accent">обирають нас</span>
+            Чому люди <span class="section-title__accent">обирають нас</span>
           </h2>
           <ul class="advantages-section__list">
             <li class="advantages-section__item">
               <article>
-                <svg class="advantages-icon" width="48" height="48">
+                <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-science"></use>
                 </svg>
                 <p>
@@ -213,7 +219,7 @@
             </li>
             <li class="advantages-section__item">
               <article>
-                <svg class="advantages-icon" width="48" height="48">
+                <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-medicine"></use>
                 </svg>
                 <p>
@@ -224,7 +230,7 @@
             </li>
             <li class="advantages-section__item">
               <article>
-                <svg class="advantages-icon" width="48" height="48">
+                <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-crown"></use>
                 </svg>
                 <p>
@@ -237,36 +243,91 @@
         </div>
       </section>
       <!-- procedures section -->
-      <section class="procedures-section" id="procedures-section">
+
+      <section class="our-procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title procedures-section__title">
-            Наші <span class="accent">процедури</span>
+          <h2 class="section-title our-procedures-section__title">
+            Наші <span class="section-title__accent">процедури</span>
           </h2>
-          <div class="carousel-container">
-            <button type="button" class="carousel-button">
-              <svg width="16" height="16">
+          <div class="our-procedures-section__slider">
+            <button
+              class="our-procedures-section__button procedure-icon prev"
+              type="button"
+            >
+              <svg width="17" height="17">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <ul class="procedures-section__our-work-list">
-              <li class="procedures-section__our-work-item">
-                <article class="procedures-section__our-work-card proc-card-1">
-                  <h3>Маски <br />для обличчя</h3>
-                </article>
-              </li>
-              <li class="procedures-section__our-work-item">
-                <article class="procedures-section__our-work-card proc-card-2">
-                  <h3>Ін'єкції <br />для обличчя</h3>
-                </article>
-              </li>
-              <li class="procedures-section__our-work-item">
-                <article class="procedures-section__our-work-card proc-card-3">
-                  <h3>Чистка <br />обличчя</h3>
-                </article>
-              </li>
-            </ul>
-            <button type="button" class="carousel-button">
-              <svg width="16" height="16">
+            <div class="our-procedures-section__container swiper-container">
+              <ul class="our-procedures-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedures-card-1">
+                    <h3 class="procedures-card-1__title">
+                      Маски<br />для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-card-2">
+                    <h3 class="procedures-card-2__title">
+                      Ін'єкції<br />для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-card-3">
+                    <h3 class="procedures-card-3__title">
+                      Очищення<br />
+                      обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-card-1">
+                    <h3 class="procedures-card-1__title">
+                      Маски<br />для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-card-2">
+                    <h3 class="procedures-card-2__title">
+                      Ін'єкції<br />для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-card-3">
+                    <h3 class="procedures-card-3__title">
+                      Очищення<br />
+                      обличчя
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 1"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 2"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 3"
+                ></button>
+              </div>
+            </div>
+            <button
+              class="our-procedures-section__button procedure-icon next"
+              type="button"
+            >
+              <svg class="procedure-icon__arrow" width="17" height="17">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
@@ -277,7 +338,7 @@
       <section class="contacts-section" id="contacts-section">
         <div class="container">
           <h2 class="section-title contacts-section__title">
-            Як нас <span class="accent">знайти</span>
+            Як нас <span class="section-title__accent">знайти</span>
           </h2>
           <div class="contacts-section__container">
             <iframe
@@ -492,6 +553,9 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/procedures-slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
