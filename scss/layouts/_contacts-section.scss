@@ -27,24 +27,36 @@
 
 
     @media screen and (min-width: $bp-tablet) {
-        flex-direction: row;
-        gap: 32px;
-        margin-bottom: 94px;
+        justify-content: center;
+            margin: 0;
+            flex-direction: row;
+            gap: 32px;
     }
 
 }
 &__form-container {
     border-radius: 32px;
     width: 100%;
-    max-width: 423px;
+    
     height: 100%;
     /* max-height: 481px; */
     background-color: var(--main-brand-color-dark);
     background-image: url(../images/background-footer.png);
     padding: 48px 57px;
+
+    @media screen and (min-width: $bp-tablet) {
+           max-width: 423px;
+        }
 }
 &__map {
     border-radius: 32px;
+    width: 100%;
+    flex-basis: 320px;
+border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+            width: 605px;
+        }
 }
 }
 

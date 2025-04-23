@@ -143,15 +143,12 @@
       <!-- hero section -->
       <section class="hero-section">
         <div class="container hero-section__container">
-          <p>Косметологічна клініка</p>
-          <h1 class="hero-section__title">
-            beauty <br />
-            zone
-          </h1>
+          <p class="hero-section__text">Косметологічна клініка</p>
+          <h1 class="hero-section__title">beauty zone</h1>
           <button class="button-primary modal-btn-open" type="button">
             Замовити дзвінок
           </button>
-          <p class="hero-section__text">
+          <p class="button-primary__description">
             Запишись та отримай безкоштовну <br />
             консультацію нашого косметолога
           </p>
@@ -175,6 +172,9 @@
               процедури та препарати допоможуть вам підтримувати свою красу та
               молодість. З нами краса назавжди!
             </p>
+            <svg class="star1 star" width="64" height="64">
+              <use href="./images/icons.svg#icon-star-big"></use>
+            </svg>
           </div>
           <div class="descr-img-container">
             <img
@@ -182,9 +182,7 @@
               src="./images/face-before.jpg"
               alt="Обличчя до процедури"
             />
-            <svg class="star1 star" width="64" height="64">
-              <use href="./images/icons.svg#icon-star-big"></use>
-            </svg>
+
             <svg class="star2 star" width="40" height="40">
               <use href="./images/icons.svg#icon-star-middle"></use>
             </svg>
@@ -414,80 +412,102 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <a href="/">
-              <img src="./images/logo.svg" alt="brand logo" />
-            </a>
-
-            <ul class="footer-menu">
-              <li>
-                <a class="link-footer" href="#descriprtion-section">Про нас</a>
-              </li>
-              <li>
-                <a class="link-footer" href="#advantages-section">Чому ми</a>
-              </li>
-              <li>
-                <a class="link-footer" href="#procedures-section"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a class="link-footer" href="#contacts-section">Контакти</a>
-              </li>
-            </ul>
+    <footer class="footer-section">
+      <div class="footer-section__container">
+        <div class="footer-section__flex">
+          <nav class="footer-section__nav">
+            <div class="footer-section__logo">
+              <a href="#">
+                <img
+                  class="footer-logo"
+                  src="./images/logo.svg"
+                  alt="Логотип косметологічної клініки"
+                />
+              </a>
+            </div>
+            <div class="footer-section__nav-menu">
+              <ul>
+                <li class="footer-section__list">
+                  <a class="footer-link" href="#about-us">Про нас</a>
+                </li>
+                <li class="footer-section__list">
+                  <a class="footer-link" href="#why-us">Чому ми</a>
+                </li>
+                <li class="footer-section__list">
+                  <a class="footer-link" href="#our-procedures"
+                    >Наші процедури</a
+                  >
+                </li>
+                <li class="footer-section__list">
+                  <a class="footer-link" href="#contacts">Контакти</a>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="link-footer" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="link-footer" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://maps.app.goo.gl/gZARi7C7sAbdpwJKA"
-                  target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-
-              <li>
-                <a href="tel:+380960000007" target="_blank">
-                  <svg class="footer-icon" width="24" height="24">
+          <div class="footer-section__menu">
+            <address class="footer-section__address">
+              <ul class="address-menu">
+                <li>
+                  <a class="address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a class="address-link" href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="address-link"
+                    href="https://goo.gl/maps/jFaZeVD6NT7iMtQo8"
+                    target="_blank"
+                    >Україна, м. Київ, <br />бул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-social">
+                <a href="tel:+380960000007">
+                  <svg class="footer-social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-telephone"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <svg class="footer-icon" width="24" height="24">
+                <a href="#">
+                  <svg class="footer-social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <svg class="footer-icon" width="24" height="24">
+                <a href="#">
+                  <svg class="footer-social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
-
-            <div class="address-info">
-              <a href="#" class="link-footer">Політика конфіденційності</a>
-              <p>&copy; 2022 Дані захищені</p>
+              </div>
+            </address>
+            <div class="footer-section__info">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <div class="footer-section__info-social">
+                <a href="tel:+380960000007">
+                  <svg class="footer-social__icon" width="35" height="40">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="footer-social__icon" width="22" height="37">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="footer-social__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="footer-section__copyright">&copy; 2022 Дані захищені</p>
             </div>
-          </address>
+          </div>
         </div>
       </div>
     </footer>

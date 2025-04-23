@@ -1,19 +1,31 @@
 .button-primary {
-    color: var(--white-color);
-    background-color: var(--main-brand-color-light);
-    border: 2px solid var(--main-brand-color-light);
-    border-radius: 32px;
-    cursor: pointer;
-    font-weight: 600;
     padding: 16px 32px;
-    margin-bottom: 14px;
-    font-family: 'Roboto', sans-serif;
-    transition: color 0.2s, background-color 0.2s;
-}
-
-.button-primary:hover {
-    color: var(--main-brand-color-dark);
-    background-color: transparent;
+        color: var(--white-color);
+        font-size: 18px;
+        font-weight: 600;
+        background-color: var(--main-brand-color-light);
+        border-radius: 32px;
+        border: 2px solid var(--main-brand-color-light);
+        margin-bottom: 14px;
+        transition: background-color 0.2s;
+    
+        &:hover {
+            color: var(--main-brand-color-dark);
+            background-color: transparent;
+        }
+    
+        &__description {
+            font-size: 11px;
+            width: 186px;
+            text-align: center;
+            margin-bottom: 0;
+    
+            @media screen and (min-width: $bp-desktop) {
+                width: 238px;
+                font-size: 12px;
+            }
+    
+        }
 }
 .form-button {
     margin: 0 auto 8px;

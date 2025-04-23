@@ -2,7 +2,7 @@
 .hero-section {
     padding: 100px 20px;
        
-    background-image: url(../images/hero-pic.png);
+    background-image: url(../images/hero-mobile.png);
    
     background-repeat: no-repeat;
     background-position: center top;
@@ -11,6 +11,7 @@
 
     @media screen and (min-width: $bp-tablet) {
             padding: 123px 0 127px 106px;
+            background-image: url(../images/hero-pic.png);
         }
 
     &__container {
@@ -24,25 +25,32 @@
        
      }
 &__title {
-    font-family: Roboto;
-    color: var(--main-brand-color-light);
-    font-size: 54px;
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 81.5%;
-    margin-bottom: 32px;
-    margin-top: 0;
-
-    @media screen and (min-width: $bp-desktop) {
-        font-family: 'Play';
-        font-size: 140px;
-        text-align: left;
-        margin-bottom: 40px;
-    }
+    width: 330px;
+        padding: 0;
+        color: var(--main-brand-color-light);
+        font-family: Play;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 0.8;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            width: 529px;
+            font-size: 140px;
+            margin-bottom: 40px;
+        }
 }
 
 &__text {
-    font-size: 12px;
+    margin: 0;
+        font-size: 12px;
+        
+    
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
 }
 }
 

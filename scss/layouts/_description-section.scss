@@ -7,12 +7,32 @@
     gap: 28px;
 }
 &__text {
-    font-size: 22px;
+    margin-bottom: 16px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+}
 }
 
-
 &__box {
-    width: 550px;
+    display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 0px;
+        max-width: 320px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            padding-bottom: 30px;
+            flex-basis: 93%;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 40px;
+            max-width: 700px;
+            flex-basis: 55%;
+        }
 }
 
 &__title {
@@ -46,7 +66,7 @@
 .face-img {
 display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
         display: flex;
             width: 340px;
                 height: 340px;

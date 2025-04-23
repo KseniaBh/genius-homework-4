@@ -5,8 +5,11 @@
 
 .star1 {
     fill: var(--main-brand-color-dark);
-    top: 355px;
-    
+    position: absolute;
+    width: 40px;
+        height: 40px;
+    right: 20px;
+        bottom: -30px;
     animation: pulsing 2s infinite;
 
     @media screen and (min-width: $bp-tablet) {
@@ -14,7 +17,7 @@
             fill: var(--main-brand-color-dark);
             width: 40px;
             height: 40px;
-            left: 140px;
+            top: 500px;
             
             animation: pulsing 2s infinite;
         }
